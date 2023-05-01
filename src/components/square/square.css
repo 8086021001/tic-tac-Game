@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+  }
+
+  .square {
+    background: #d1f106;
+    border: 20px solid #999;
+    float: left;
+    font-size: 100px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 80px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 80px;
+  }
+
+  .board-row:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+
+  .totBoard{
+    margin: 100px;
+    margin-left: 400px;
+  }
