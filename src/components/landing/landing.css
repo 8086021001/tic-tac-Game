@@ -1,0 +1,50 @@
+.gameBut{
+    background-color: azure;
+    border: 2px solid yellow;
+    font-size: larger;
+    color: black;
+}
+
+
+h1 {
+
+    color: #333;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    background-image: "https://www.bing.com/images/search?view=detailV2&ccid=U6UdfAJp&id=DA9A40D110E238A8B44A4E7A94E5C9F45347E836&thid=OIP.U6UdfAJp62_Dr2rg2tuUFQHaDt&mediaurl=https%3a%2f%2fwww.codester.com%2fstatic%2fuploads%2fitems%2f1612%2fpreview-xl.jpg&exph=800&expw=1600&q=tic+tac+toe+game+logo&simid=608041316605821134&FORM=IRPRST&ck=B725CF59385E5938ED7C1B5FEFD1E120&selectedIndex=27";
+}
+
+.btn {
+    padding: 12px 24px;
+    background-color: #008CBA;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 100px;
+    margin-left: 50%;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #006d84;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+    
+    .btn {
+        font-size: 16px;
+    }
+}

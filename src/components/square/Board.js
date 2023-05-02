@@ -5,6 +5,7 @@ import Button from '@mui/material/Button';
 import Restart from '../restart/restart';
 
 
+
 function Square({value,handclick,col}){
 
   return (
@@ -39,6 +40,11 @@ export default function Board() {
     setSquare(nextSquares);
   }
 
+
+  function handleRestart(){
+    window.location.reload()
+  }
+
   winner = calculateWinner(square)
      
     
@@ -55,7 +61,7 @@ export default function Board() {
   }
 
   return (
-    <>
+    <div className='totbak'>
     <div className='totBoard'>
     <div className="board-row">
     <Square value = {square[0]} handclick = {() => handleClick(0)} col = {prevx}/>
@@ -73,8 +79,10 @@ export default function Board() {
     <Square value = {square[8]} handclick = {() => handleClick(8)} col = {prevx}/>
     </div>
     </div>
+    <button className='btn' onClick={handleRestart}>Restart</button>
+
     <div><Restart winner ={winner} stat = {status} /></div>
-  </>
+  </div>
   )
 }
 
